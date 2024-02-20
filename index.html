@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwindcss CSS -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <!-- flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <title>Kelompok 1</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 w-full shadow-lg h-44">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./assets/img/th.jpg" class="h-16" alt="HC Logo" />
+                <span class="self-center text-green-700 text-2xl font-semibold whitespace-nowrap dark:text-white">Health
+                    Care</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                    aria-expanded="false"
+                    class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </button>
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                        <span class="sr-only">Search icon</span>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <button data-collapse-toggle="navbar-search" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-search" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-3 md:hidden">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <ul
+                    class="flex flex-col p-2 mt-4 font-medium border border-gray-100 rounded-lg bg-green-500 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  ">
+                    <li>
+                        <a href="#home" class="block py-2 px-3 text-white  rounded   md:p-0 md:dark:text-blue-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="#contect"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Navbar End -->
+
+    <!-- Hero banner Start -->
+
+    <section id="home" class="p-20">
+        <!-- Wrapper -->
+        <div class="text-center">
+            <h1 class="font-bold  text-2xl mb-6">Selamat Datang di Health Care, Tempat Berbagi dan Memahami Kesehatan Mental.</h1>
+            <img src="./assets/img/dokter.avif" alt="" class="h-auto max-w-lg mx-auto">
+        </div>
+        <!-- wrwapper end -->
+    </section>
+
+
+    <!-- Hero banner End -->
+
+    <!-- Content Start -->
+    <section id="content" class="pl-28 pr-28">
+        <p class="text-center ">Selamat Datang di Health Care, Tempat Berbagi dan Memahami Kesehatan Mental.
+            Kesehatan mental adalah aspek penting dalam kesejahteraan kita sehari-hari. Kami di Health Care berkomitmen untuk memberikan dukungan, informasi, dan inspirasi untuk memahami dan meningkatkan kesehatan mental Anda.
+            Setiap orang memiliki perjalanan uniknya sendiri, dan di sini, kami ingin menciptakan ruang yang aman dan terbuka untuk berbicara tentang tantangan, kemenangan, dan pengalaman seputar kesehatan mental. Kami percaya bahwa dengan berbagi cerita, pengetahuan, dan sumber daya, kita dapat memperkuat satu sama lain.
+            Jelajahi artikel, tips kesehatan mental, dan panduan praktis yang kami sediakan. Apakah Anda mencari dukungan pribadi, informasi terkini, atau sekadar ingin memahami lebih dalam tentang kesehatan mental, Anda berada di tempat yang tepat.
+            Ingatlah bahwa perjalanan menuju kesehatan mental yang lebih baik adalah proses, dan Anda tidak sendirian. Kami bersama-sama membangun masyarakat yang peduli dan mendukung kesehatan mental.
+            Mari kita bersama-sama menjadikan kesehatan mental sebagai prioritas dan membangun fondasi kebahagiaan yang kokoh. Terima kasih telah bergabung di Health Care.
+            Dengan kasih,
+            Tim Health Care
+            </p>
+    </section><br>
+    <hr class="bg-black h-1">
+
+    <!-- Content 2 Start -->
+    <section id="about" class="p-20">
+        <h1 class="text-center font-bold text-2xl">Mengenal Lebih Jauh Beberapa Kondisi Kesehatan Mental</h1>
+        <p class="text-center p-4">Simak sejumlah istilah dan kondisi menyangkut kesehatan mental yang
+            sering kita dengar, serta kiat agar kita dapat mendukung kesejahteraan keluarga.</p>
+    </section>
+    <!-- Content 2 End -->
+
+    <!-- content 3 start -->
+    <div class="flex gap-4 text-center justify-center">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/depresi.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Apa itu depresi?
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolor sequi pariatur architecto nobis dolores enim sunt officiis voluptates sed! Provident minus odit possimus suscipit saepe libero assumenda, nostrum modi.</p>
+                    <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        Read more
+                      </button>
+            </div>
+           <!-- Main modal -->
+<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    Apa itu depresi
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+                <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/depresi.jpg" alt="" />
+                <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta accusamus, ad cupiditate modi neque veritatis aperiam incidunt et recusandae consequuntur quibusdam sit excepturi mollitia ex. Aspernatur explicabo vitae ut!
+                </p>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/kecemasan.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Apa itu kecemasan?
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nemo doloribus et voluptatem dolor, vel, ipsa consequatur vitae veniam aperiam quos rem magni aut rerum commodi? Earum officiis enim tempore?</p>
+                    <button data-modal-target="modal-2" data-modal-toggle="modal-2" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        Read more
+                      </button>
+            </div>
+           <!-- Main modal -->
+<div id="modal-2" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    Apa itu kecemasan?
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-2">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+                <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/kecemasan.jpg" alt="" />
+                <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta accusamus, ad cupiditate modi neque veritatis aperiam incidunt et recusandae consequuntur quibusdam sit excepturi mollitia ex. Aspernatur explicabo vitae ut!
+                </p>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="modal-2" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/biru.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Apa itu stres?
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quo. Commodi, modi dicta quisquam tenetur odit dolores fugiat temporibus in corporis, earum itaque similique iusto culpa aliquid repellendus velit cupiditate?</p>
+                    <button data-modal-target="modal-3" data-modal-toggle="modal-3" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        Read more
+                      </button>
+            </div>
+           <!-- Main modal -->
+<div id="modal-3" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    Apa itu setres?
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-3">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+                <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/biru.jpg" alt="" />
+                <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta accusamus, ad cupiditate modi neque veritatis aperiam incidunt et recusandae consequuntur quibusdam sit excepturi mollitia ex. Aspernatur explicabo vitae ut!
+                </p>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="modal-3" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+    </div>
+    <hr class="bg-black h-1 mt-6">
+
+    <!-- content 3 End -->
+    <!-- Content 4 Start -->
+    <section id="content4">
+        <!-- wrapper -->
+        <div class="text-center p-16">
+            <h1 class="font-bold text-2xl">Tips menjaga kesehatan mental</h1>
+            <p class="p-8">Cari tahu bentuk dukungan yang tepat untuk kesehatan mental keluarga Anda</p>
+            <div class="flex gap-4 text-center justify-center">
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/Diskusi-01.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Berdiskusi
+                                tentang
+                                konflik dan perang
+                                dengan anak
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde repellat nihil facilis! Dolore nesciunt sed cumque earum impedit quidem a recusandae deserunt asperiores alias quas, fugiat officiis. Minima, repudiandae.</p>
+                            <button data-modal-target="modal-4" data-modal-toggle="modal-4" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                                Read more
+                              </button>
+                    </div>
+                   <!-- Main modal -->
+        <div id="modal-4" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Berdiskusi tentang konflik dan perang dengan anak
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-4">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5 space-y-4">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/Diskusi-01.png" alt="" />
+                        <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta accusamus, ad cupiditate modi neque veritatis aperiam incidunt et recusandae consequuntur quibusdam sit excepturi mollitia ex. Aspernatur explicabo vitae ut!
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modal-4" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/ibuk.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Kiat
+                                berkomunikasi
+                                dengan remaja
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi reprehenderit, debitis omnis praesentium earum cum amet nesciunt eligendi perspiciatis placeat sit ipsam necessitatibus accusantium excepturi quaerat. Natus, est voluptatibus!</p>
+                            <button data-modal-target="modal-5" data-modal-toggle="modal-5" class="justify-center block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                                Read more
+                              </button>
+                    </div>
+                   <!-- Main modal -->
+        <div id="modal-5" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Kiat berkomunikasi dengan remaja
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-5">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5 space-y-4">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/ibuk.jpg" alt="" />
+                        <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta accusamus, ad cupiditate modi neque veritatis aperiam incidunt et recusandae consequuntur quibusdam sit excepturi mollitia ex. Aspernatur explicabo vitae ut!
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modal-5" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/tangan.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tips
+                                merawat diri
+                                untuk orang tua
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis eligendi deserunt sapiente veniam quo nesciunt vero? Hic quis explicabo iste assumenda dolorum, nihil labore officia facere commodi libero, necessitatibus neque?</p>
+                            <button data-modal-target="modal-6" data-modal-toggle="modal-6" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                                Read more
+                              </button>
+                    </div>
+                   <!-- Main modal -->
+        <div id="modal-6" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Tips merawat diri untuk orang tua
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-6">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5 space-y-4">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/tangan.jpg" alt="" />
+                        <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta accusamus, ad cupiditate modi neque veritatis aperiam incidunt et recusandae consequuntur quibusdam sit excepturi mollitia ex. Aspernatur explicabo vitae ut!
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modal-6" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <hr class="bg-black h-1">
+    <section id="cerita">
+        <!-- wrapper -->
+        <div class="text-center p-16">
+            <h1 class="font-bold text-2xl">Cerita</h1>
+            <p class="p-8">Cari tahu bentuk dukungan yang tepat untuk kesehatan mental keluarga Anda</p>
+            <div class="flex gap-4 text-center justify-center">
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/anakmuda.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Anak muda memimpin upaya menjaga kesehtana jiwa
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, fuga, repudiandae assumenda iure repellendus facere ut eos pariatur eaque cupiditate cumque explicabo totam facilis, nemo magnam modi maiores rem molestiae!</p>
+                            <button data-modal-target="modal-7" data-modal-toggle="modal-7" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                                Read more
+                              </button>
+                    </div>
+                   <!-- Main modal -->
+        <div id="modal-7" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Anak muda memimpin upaya menjaga kesehtana jiwa
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-7">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5 space-y-4">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/anakmuda.jpg" alt="" />
+                        <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta accusamus, ad cupiditate modi neque veritatis aperiam incidunt et recusandae consequuntur quibusdam sit excepturi mollitia ex. Aspernatur explicabo vitae ut!
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modal-7" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/cemas.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tak perlu waswas saat cemas
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aspernatur voluptas ut odit molestias, nulla laboriosam libero, obcaecati porro voluptatibus vitae dignissimos. Magni dolor deleniti recusandae, quidem ut veniam ad.</p>
+                            <button data-modal-target="modal-8" data-modal-toggle="modal-8" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                                Read more
+                              </button>
+                    </div>
+                   <!-- Main modal -->
+        <div id="modal-8" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Tak perlu waswas saat cemas
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-8">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5 space-y-4">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/cemas.jpg" alt="" />
+                        <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta accusamus, ad cupiditate modi neque veritatis aperiam incidunt et recusandae consequuntur quibusdam sit excepturi mollitia ex. Aspernatur explicabo vitae ut!
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modal-8" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/anakmuda.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">"Rasakan perasaanmu"
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quas non neque. Modi dolores in inventore ipsam facilis fugiat illum ducimus asperiores autem. Magnam consequuntur ducimus similique sint fuga iusto!</p>
+                            <button data-modal-target="modal-9" data-modal-toggle="modal-8" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                                Read more
+                              </button>
+                    </div>
+                   <!-- Main modal -->
+        <div id="modal-9" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            "Rasakan perasaanmu"
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-9">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5 space-y-4">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/anakmuda.jpg" alt="" />
+                        <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta accusamus, ad cupiditate modi neque veritatis aperiam incidunt et recusandae consequuntur quibusdam sit excepturi mollitia ex. Aspernatur explicabo vitae ut!
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modal-9" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr class="bg-black h-1">
+
+    <!-- Content 4 End -->
+    <!-- Berita Start -->
+    <section id="berita" class="p-16">
+        <!-- Wrapper -->
+        <h1 class="text-center text-2xl font-bold p-8">Berita</h1>
+        <figure class="flex justify-center">
+            <img src="./assets/img/berita.jpg" alt="" class="h-52">
+            <blockquote class="bg-gray-200 rounded">
+                <p class="p-3">Akan dilakukan vaksin COVID-19 tanggal 29-2-2024</p>
+                <a class="p-3 text-blue-500 underline cursor-pointer hover:text-blue-600" href="#">baca selengkapnya</a>
+            </blockquote>
+        </figure>
+    </section>
+    <!-- Berita End -->
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+
+    <footer class="bg-gray-800 text-white" id="contect">
+        <div class=" mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://flowbite.com/" class="flex items-center">
+                        <img src="./assets/img/th.jpg" class="h-16 me-3" alt="FlowBite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap ">Health
+                            care</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-10 gap-8 sm:grid-cols-3">
+                    <div>
+                        <h1 class="mb-6 text-sm font-bold uppercase ">Beranda Health
+                            Care</h1>
+                        <ul class="font-medium">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com/" class="hover:underline">Penelitian dan Laporan</a>
+                            </li>
+                            <li>
+                                <a href="#cerita" class="hover:underline">Cerita</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="mb-6 text-sm font-bold uppercase ">Tentang Kami</h1>
+                        <ul class="font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline ">Lowongan</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-medium hover:underline">Pertanyaan Umum</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <h2
+                            class="mb-6 text-sm font-bold bg-green-600 text-center text-white p-3 rounded-full uppercase ">
+                            Hubungi
+                            Kami
+                        </h2></a>
+                        <div class="flex justify-center gap-4">
+                            <svg class="border bg-purple-700  rounded-full w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M13.1 6H15V3h-1.9A4.1 4.1 0 0 0 9 7.1V9H7v3h2v10h3V12h2l.6-3H12V6.6a.6.6 0 0 1 .6-.6h.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="border bg-purple-700 rounded-full w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M22 5.9c-.7.3-1.5.5-2.4.6a4 4 0 0 0 1.8-2.2c-.8.5-1.6.8-2.6 1a4.1 4.1 0 0 0-6.7 1.2 4 4 0 0 0-.2 2.5 11.7 11.7 0 0 1-8.5-4.3 4 4 0 0 0 1.3 5.4c-.7 0-1.3-.2-1.9-.5a4 4 0 0 0 3.3 4 4.2 4.2 0 0 1-1.9.1 4.1 4.1 0 0 0 3.9 2.8c-1.8 1.3-4 2-6.1 1.7a11.7 11.7 0 0 0 10.7 1A11.5 11.5 0 0 0 20 8.5V8a10 10 0 0 0 2-2.1Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="border bg-purple-700 rounded-full w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.5 3A3.5 3.5 0 0 0 14 7L8.1 9.8A3.5 3.5 0 0 0 2 12a3.5 3.5 0 0 0 6.1 2.3l6 2.7-.1.5a3.5 3.5 0 1 0 1-2.3l-6-2.7a3.5 3.5 0 0 0 0-1L15 9a3.5 3.5 0 0 0 6-2.4c0-2-1.6-3.5-3.5-3.5Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- JS Area -->
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
